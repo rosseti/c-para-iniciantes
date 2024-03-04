@@ -11,6 +11,7 @@
 #define duplo double
 #define vazio void
 #define principal main
+#define escreva printf
 
 int principal()
 {
@@ -19,7 +20,7 @@ int principal()
      */
     para(int i = 0; i < 5; i++)
     {
-        printf("contagem: %d\n", i);
+        escreva("contagem: %d\n", i);
     }
 
     /**
@@ -28,11 +29,11 @@ int principal()
     int numero = 10;
     se(numero > 5)
     {
-        printf("o número é maior que 5.\n");
+        escreva("o número é maior que 5.\n");
     }
     senao
     {
-        printf("o número não é maior que 5.\n");
+        escreva("o número não é maior que 5.\n");
     }
 
     /**
@@ -42,14 +43,14 @@ int principal()
     {
         fazer
         {
-            printf("olá, mundo!\n");
+            escreva("olá, mundo!\n");
         }
         enquanto(0); 
         
         return "olá, mundo!";
     }
 
-    printf("%s\n", saudacao());
+    escreva("%s\n", saudacao());
 
     return 0;
 }
